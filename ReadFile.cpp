@@ -39,4 +39,9 @@ String* ReadFile::readLine()
    String* str = new String((const char*) text.c_str());
    return str;
 }
+<<<<<<< HEAD
 // kdiff messup
+=======
+
+//comment
+>>>>>>> 565de3ca9c65c68563aca41dc385ffd1ae7f1cc4
