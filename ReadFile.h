@@ -17,7 +17,7 @@ class ReadFile
 		~ReadFile(); //destructor
 		String* readLine();
 		bool eof();
-		close();
+		void close();
 	
 };
 
