@@ -15,7 +15,6 @@ class ReadFile
 	public: 
 		ReadFile(const char* file_name); // constructor
 		~ReadFile(); //destructor
-		destroyReadFile();
 		String* readLine();
 		bool eof();
 		close();
