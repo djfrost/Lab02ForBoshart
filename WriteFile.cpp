@@ -10,10 +10,9 @@ WriteFile::WriteFile(const char* file_name)
 WriteFile::~WriteFile()
 {
    output_file.close();
-   delete closed;
 }
 
-WriteFile::void close()
+void WriteFile::close()
 {
    if (!closed)
    {
@@ -22,10 +21,10 @@ WriteFile::void close()
    }
 }
 
-WriteFile::void writeLine(String* line)
+void WriteFile::writeLine(String* line)
 {
-   if (!closed && length() > 0)
+   if (!closed && line->length() > 0)
    {
-      output_file << getText() << endl;
+      output_file << line->getText() << endl;
    }
 }
